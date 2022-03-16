@@ -414,3 +414,10 @@ INSERT INTO
 dependents(dependent_id,first_name,last_name,relationship,employee_id)
 VALUES (30,'Sandra','Taylor','Child',176);O REGIONS VALUES (4,‘Middle East
 and Africa’);
+
+
+alter table departments rename to dept;
+
+alter table employees modify salary smallint(10);
+
+alter table employees add commission int(10);
