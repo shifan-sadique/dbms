@@ -33,3 +33,8 @@ insert into grade_report values(8,135,'A');
 insert into prerequisite values('CS3380','CS3320');
 insert into prerequisite values('CS3380','MATH2410');
 insert into prerequisite values('CS3320','CS1310');
+
+#retrieve the list of all courses and grades of Smith
+
+#name of student who took section database course offered in fall 2008 and their grade in that section
+select student.name, grade_report.grade,course_name from student inner join grade_report on student.student_number=grade_report.student_number inner join section on grade_report.section_identifier=section.section_identifier inner join course on section.course_number=course.course_number where course.course_name='Database' and section.semester='fall' and section.year='08';
