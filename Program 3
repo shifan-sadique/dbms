@@ -44,3 +44,6 @@ select prerequisite_number from prerequisite inner join course on course.course_
 
 #retrieve the names of all seniors majoring in cs
 select name from student where class=(select max(class) from student) and major='CS';
+
+#retrieve course name taught by prof King in 2007 and 2008
+select course_name from course inner join section on section.course_number=course.course_number where section.instructor='King' and section.year between 07 and 08;
