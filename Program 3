@@ -43,4 +43,4 @@ select student.name, grade_report.grade,course_name from student inner join grad
 select prerequisite_number from prerequisite inner join course on course.course_number=prerequisite.course_number where course.course_name='database';
 
 #retrieve the names of all seniors majoring in cs
-select name from student where class=2 and major='CS';
+select name from student where class=(select max(class) from student) and major='CS';
