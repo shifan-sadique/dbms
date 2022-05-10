@@ -1,0 +1,12 @@
+create a db name college and then create a collection to list insert the values increase 
+write a mongo db query to
+1)display name(fname and lname ) and mark of all female sydent in mca dip
+2)display det of student who secure highest mark in the cou mca 
+3)display all male stu who sec a+ grade 
+4)disp name of top 3 student in mech dep
+5)disp detail of female student(fname lname mark contact )who accure mark more than 90 
+6)displ det of student who sec mark more than 80 but less than 90
+7)dip the stud whos name start with b
+8)disp all student from kollam
+9)disp all student who does not belong neither kollam nor tvm
+10)disp all female stud who belong to either kollam or tvm
